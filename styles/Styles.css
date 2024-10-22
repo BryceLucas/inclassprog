@@ -5,74 +5,71 @@
 }
 
 body {
-  background-color: black; /* Body background is black */
+  background-color: black; /* Set the background to black */
   display: flex;
   justify-content: center;
-  padding-top: 120px; /* Separation from the top of the browser window */
+  align-items: center;
+  min-height: 100vh; /* Ensure it covers the entire viewport height */
 }
 
-/* Product Card Styles */
 .product-card {
   display: flex;
-  width: 800px; /* Width of the parent container */
-  height: 500px; /* Height of the parent container */
-  background-color: white; /* Black background behind the image and text */
-  overflow: hidden;
+  flex-direction: row;
+  width: 800px; /* Width of overall parent container */
+  height: 500px; /* Height of overall parent container */
+  background-color: white; /* White background for the card itself */
+  color: black; /* Black text color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Left Image Column */
 .left-img-col {
-  width: 800px; /* Half of 800px width */
-  height: 500px; /* Full height of the container */
+  flex: 1;
   overflow: hidden;
 }
 
 .left-img-col img {
   width: 100%;
   height: 100%;
-  object-fit: fill; /* Ensures the image covers its container without stretching */
+  object-fit: cover;
 }
 
 /* Right Info Column */
 .right-info-col {
-  width: 400px; /* Half of 800px width */
-  height: 500px; /* Full height of the container */
-  padding: 20px; /* Padding on all sides */
-  color: lightgray; /* Font color as per instruction */
-  overflow-y: auto; /* Scroll if content overflows vertically */
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* Heading Styles */
 .right-info-col h3 {
-  font-size: 32px; /* Font size as per instruction */
-  margin-bottom: 15px; /* Separation between heading and subheading */
-  color: white; /* Visible against black background */
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: black;
 }
 
 .right-info-col h5 {
-  font-size: 18px; /* Font size as per instruction */
-  margin-bottom: 20px; /* Separation between subheading and description */
+  font-size: 18px;
+  margin-bottom: 20px;
   color: lightgray;
 }
 
-/* Product Description */
 .right-info-col p {
-  font-size: 14px; /* Font size as per instruction */
-  margin-bottom: 20px; /* Separation between description and available colors */
-  padding-left: 50px; /* Padding from left side on product description */
+  font-size: 14px;
+  margin-bottom: 20px;
   color: lightgray;
 }
 
-/* Available Colors Section */
 .available-colors {
   display: flex;
   align-items: center;
-  margin-bottom: 20px; /* Separation between available colors and purchase */
-  padding: 20px; /* Padding on all sides as per instruction */
+  margin-bottom: 20px;
 }
 
 .available-colors span {
-  font-size: 14px; /* Font size as per instruction */
+  font-size: 14px;
   color: lightgray;
   margin-right: 10px;
 }
@@ -81,8 +78,8 @@ body {
 .red-color-container,
 .white-color-container {
   display: inline-block;
-  width: 20px; /* Width as per instruction */
-  height: 20px; /* Height as per instruction */
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   margin-left: 10px;
 }
@@ -96,29 +93,27 @@ body {
 }
 
 .white-color-container {
-  background-color: blue;
+  background-color: beige;
 }
 
-/* Price and Purchase Button */
 .price {
-  margin-bottom: 20px; /* Separation between price and the end of the container */
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .price h4 {
-  font-size: 32px; /* Font size as per instruction */
-  color: white; /* Visible against black background */
+  font-size: 32px;
+  color: black;
   margin-right: 20px;
 }
 
 .buy-btn {
-  width: 150px; /* Width as per instruction */
-  height: 40px; /* Height as per instruction */
+  width: 150px;
+  height: 40px;
   background-color: black;
   color: white;
-  border: 1px solid white; /* Added border for better visibility */
-  border-radius: 5px;
+  border: none;
   cursor: pointer;
 }
 
