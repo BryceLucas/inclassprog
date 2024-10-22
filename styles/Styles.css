@@ -1,6 +1,4 @@
-/* CSS Stylesheet for product-card.html */
 
-/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh; /* Ensure that it spans full height of the window */
   margin: 0;
 }
 
@@ -26,11 +24,12 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  margin-top: 120px;
+  margin-top: 20px; /* Reduced to make it more centered */
 }
 
 .left-img-col {
-  flex: 1;
+  flex: 1 1 50%;
+  overflow: hidden;
 }
 
 .left-img-col img {
@@ -40,12 +39,12 @@ body {
 }
 
 .right-info-col {
-  flex: 1;
-  padding: 20px;
+  flex: 1 1 50%;
+  padding: 30px; /* More padding to improve spacing */
   color: #333;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between; /* Makes sure elements are evenly spaced */
 }
 
 .right-info-col h3 {
@@ -62,7 +61,6 @@ body {
 
 .right-info-col p {
   font-size: 14px;
-  padding-left: 0;
   margin-bottom: 20px;
   color: lightgray;
 }
@@ -71,7 +69,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 0; /* Remove additional padding */
 }
 
 .available-colors span {
@@ -106,7 +104,6 @@ body {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 
 .price h4 {
@@ -128,4 +125,3 @@ body {
 .buy-btn:hover {
   background-color: #444;
 }
-
