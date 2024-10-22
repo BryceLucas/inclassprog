@@ -51,14 +51,14 @@ body {
 }
 
 .available-colors {
-  padding: 20px;
-  padding-left: 50px;
-  padding-bottom: 45px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .available-colors span {
-  font-size: 14px;
-  font-weight: bold;
+  margin-right: 10px;
 }
 
 .black-color-container,
