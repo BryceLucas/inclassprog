@@ -63,7 +63,7 @@ body {
 
 .black-color-container,
 .red-color-container,
-.white-color-container {
+.blue-color-container {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -95,7 +95,7 @@ body {
 }
 
 .buy-btn {
-  background-color: red;
+  background-color: black;
   color: white;
   border: none;
   width: 150px;
@@ -106,5 +106,5 @@ body {
 }
 
 .buy-btn:hover {
-  background-color: darkred;
+  background-color: red;
 }
