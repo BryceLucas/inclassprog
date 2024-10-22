@@ -1,6 +1,3 @@
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -35,7 +32,7 @@ body {
 .left-img-col img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .right-info-col {
