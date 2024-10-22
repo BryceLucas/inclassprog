@@ -2,70 +2,78 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 
 body {
-  background-color: black;
+  background-color: black; /* Body background is black */
   display: flex;
   justify-content: center;
   padding-top: 120px; /* Separation from the top of the browser window */
 }
 
+/* Product Card Styles */
 .product-card {
   display: flex;
-  width: 800px;
-  height: 500px;
-  background-color: #fff;
-  border-radius: 10px;
+  width: 800px; /* Width of the parent container */
+  height: 500px; /* Height of the parent container */
+  background-color: black; /* Black background behind the image and text */
   overflow: hidden;
 }
 
+/* Left Image Column */
 .left-img-col {
-  flex: 1;
+  width: 400px; /* Half of 800px width */
+  height: 500px; /* Full height of the container */
   overflow: hidden;
 }
 
 .left-img-col img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers its container without stretching */
+  display: block;
 }
 
+/* Right Info Column */
 .right-info-col {
-  flex: 1;
-  padding: 20px; /* Padding on all sides as per instruction */
-  color: #333;
+  width: 400px; /* Half of 800px width */
+  height: 500px; /* Full height of the container */
+  padding: 20px; /* Padding on all sides */
+  color: lightgray; /* Font color as per instruction */
+  overflow-y: auto; /* Scroll if content overflows vertically */
 }
 
+/* Heading Styles */
 .right-info-col h3 {
-  font-size: 32px;
+  font-size: 32px; /* Font size as per instruction */
   margin-bottom: 15px; /* Separation between heading and subheading */
-  color: black;
+  color: white; /* Visible against black background */
 }
 
 .right-info-col h5 {
-  font-size: 18px;
+  font-size: 18px; /* Font size as per instruction */
   margin-bottom: 20px; /* Separation between subheading and description */
   color: lightgray;
 }
 
+/* Product Description */
 .right-info-col p {
-  font-size: 14px;
+  font-size: 14px; /* Font size as per instruction */
   margin-bottom: 20px; /* Separation between description and available colors */
-  margin-left: 50px; /* Padding from left side on product description */
+  padding-left: 50px; /* Padding from left side on product description */
   color: lightgray;
 }
 
+/* Available Colors Section */
 .available-colors {
   display: flex;
   align-items: center;
   margin-bottom: 20px; /* Separation between available colors and purchase */
-  padding: 20px; /* Padding on all sides */
+  padding: 20px; /* Padding on all sides as per instruction */
 }
 
 .available-colors span {
-  font-size: 14px;
+  font-size: 14px; /* Font size as per instruction */
   color: lightgray;
   margin-right: 10px;
 }
@@ -74,8 +82,8 @@ body {
 .red-color-container,
 .white-color-container {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 20px; /* Width as per instruction */
+  height: 20px; /* Height as per instruction */
   border-radius: 50%;
   margin-left: 10px;
 }
@@ -92,6 +100,7 @@ body {
   background-color: beige;
 }
 
+/* Price and Purchase Button */
 .price {
   margin-bottom: 20px; /* Separation between price and the end of the container */
   display: flex;
@@ -99,17 +108,17 @@ body {
 }
 
 .price h4 {
-  font-size: 32px;
-  color: black;
+  font-size: 32px; /* Font size as per instruction */
+  color: white; /* Visible against black background */
   margin-right: 20px;
 }
 
 .buy-btn {
-  width: 150px;
-  height: 40px;
+  width: 150px; /* Width as per instruction */
+  height: 40px; /* Height as per instruction */
   background-color: black;
   color: white;
-  border: none;
+  border: 1px solid white; /* Added border for better visibility */
   border-radius: 5px;
   cursor: pointer;
 }
